@@ -42,6 +42,3 @@ Now, the thread of execution begins running the code line-by-line in the Code Co
     Here, a function is invoked.
 
 **Crucial Concept:** Whenever a function is invoked, a **NEW Execution Context** (a mini-box) is created inside the Code Component to handle that specific function.
-
-
-[Next](./2_hoisting.md)

@@ -4,5 +4,3 @@
 - [Scope](./3_scope.md)
 - [Closure](./4_closure.md)
 
-
-[Go To Main Navigation](../index.md)

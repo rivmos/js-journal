@@ -119,6 +119,3 @@ So JS devs created the Script Scope to prevent this. A Separate storage space fo
 
 2. The Script Scope (let, const, and function)
 Variables declared with `let` and `const` are from the new days of JavaScript.
-
-
-[Next](./3_scope.md)

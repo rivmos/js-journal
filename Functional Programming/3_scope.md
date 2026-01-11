@@ -75,6 +75,3 @@ Why?
 Function `y` is physically defined in the Global Scope.
 Therefore, its "Parent" is Global.
 It doesn't matter that `x` called it. `y` ignores `x` completely. It looks at its own local memory, finds nothing, and goes straight to its lexical parent: Global.
-
-
-[Next](./4_closure.md)
