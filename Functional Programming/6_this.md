@@ -25,7 +25,7 @@ const person = {
 person.greet(); // Hello, John
 ```
 3. Explicit Binding
-When we want to force `this` to be whatever we want. We can use the call(), apply(), or bind() methods to explicitly set `this`.   
+When we want to force `this` to be whatever we want. We can use the `call()`, `apply()`, or `bind()` methods to explicitly set `this`.   
 
 ```js
 function greet() {
@@ -73,7 +73,7 @@ class EditorService {
 ```
 
 **Interview Favourite Question:**
-What is logged? (Hint: Look at how the function inside setTimeout is being called).
+What is logged? (Hint: Look at how the function inside `setTimeout` is being called).
 
 ```js
 const obj = {
@@ -122,7 +122,7 @@ boundFn(); // always obj
 ```
 ```js
 // 3. Store reference
-const self = this;
+
 printId: function () {
   const self = this;
   setTimeout(function () {
@@ -137,7 +137,8 @@ printId: function () {
 
 ```
 
-**Test:**
+**Test: To Check Understanding**
+
 ```js
 function print() {
   console.log(this.x);
@@ -152,7 +153,7 @@ fn.apply(b);
 ```
 Output: 1 - `bind` beats `call` and `apply`
 
-Remember: Arrow functions can not be fixed with `bind`, `call`, or `apply`
+**Remember:** Arrow functions can not be fixed with `bind`, `call`, or `apply`
 
 ```js
 const arrow = () => {

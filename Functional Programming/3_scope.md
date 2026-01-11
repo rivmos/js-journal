@@ -13,8 +13,8 @@ A scope is a lexical environment where variables are accessible.
 
 2. **The Scope Chain Mechanism**
 Whenever an Execution Context is created, it also creates a Lexical Environment. This environment contains two things:
-    - Its Own Data: The local variables and functions (Variable Environment).
-    - A Pointer (Reference): A link to the Lexical Environment of its Parent (the code that physically surrounds it).
+    - **Its Own Data:** The local variables and functions (Variable Environment).
+    - **A Pointer (Reference):** A link to the Lexical Environment of its Parent (the code that physically surrounds it).
 
 **The Search Rule:** When you try to access a variable, the JavaScript engine does a specific search:
     - First, it checks its own memory.

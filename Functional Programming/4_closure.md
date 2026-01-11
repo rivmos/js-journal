@@ -47,3 +47,33 @@ The Closure (the "Backpack") contains a Live Reference (a pointer) to the variab
 3. Line 8: The code changes the value in that same memory slot to "Superman".
 4. Line 10: The function returns. The outer context dies, but the memory slot for hero is kept alive because inner is holding onto the rope (reference) attached to it.
 5. Line 12: When you later open the box (run the function), it looks at the memory slot and sees the current value: "Superman".
+
+### Full Example
+
+```js 
+function createCounter() {
+  let count = 0;        // private variable
+
+  return {
+    increment: () => ++count,
+    decrement: () => --count,
+    get: () => count,
+  };
+}
+
+const counter = createCounter();
+
+counter.increment(); // 1
+counter.increment(); // 2
+counter.decrement(); // 1
+counter.get();       // 1
+```
+
+Benefits of Closure:
+1. Data privacy – count can’t be accessed directly.
+2. State preservation – value is remembered between calls.
+3. No globals – avoids shared mutable state.
+4. Encapsulation – logic + data stay together.
+5. Multiple instances – each counter has its own memory.
+6. Cleaner APIs – expose only what is needed.
+7. Used everywhere – React hooks, event handlers, libraries.

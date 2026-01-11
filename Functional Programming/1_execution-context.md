@@ -9,6 +9,7 @@ Execution context has three* (not sure about this at the moment) parts:
 2. The Code Component (Thread of Execution) - executes the code line by line because js is a single-threaded language that means it can only do one thing at a time.
 
 `Read The Following After Reading The Call Stack and Scope Chain`
+
 3. Outer Environment (Scope Chain) - a pointer points to the parent execution context (lexical parent).
 4. this binding - points to the object that the function is called on.
 

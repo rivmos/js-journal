@@ -17,7 +17,7 @@ function getName() {
 ```
 
 - **Why didn't it crash?** Because of the Global Execution Context.
-- **Why is x undefined?** Because of the Memory Creation Phase.
+- **Why is x `undefined`?** Because of the Memory Creation Phase.
 
 ### Deep Dive: Why this happens
 
@@ -31,8 +31,8 @@ Code Execution Phase: Now, the Code Execution Phase begins:
 * **Line 1: console.log(x);**
     - The engine looks in the Memory Component.
     - Is x there? Yes.
-    - What is its value? undefined.
-    - Action: It prints undefined.
+    - What is its value? `undefined`.
+    - Action: It prints `undefined`.
 
 * **Line 2: getName();**
     - The engine looks in memory.
@@ -55,11 +55,11 @@ var getName = () => {
     console.log("Namaste Javascript");
 }
 ```
-Why the Error? Because getName is declared with var. In the Memory Phase, getName is treated just like any other variable—it gets allocated `undefined`.
+Why the Error? Because getName is declared with `var`. In the Memory Phase, getName is treated just like any other variable—it gets allocated `undefined`.
 When the execution reaches getName(), you are essentially trying to do `undefined()`. Since `undefined` is not a function, the engine throws a TypeError : getName is not a function.
 
 ### let and const
-let and const are also hoisted, but they just behave differently than var. They are hoisted into a special zone called the Temporal Dead Zone (TDZ).
+`let` and `const` are also hoisted, but they just behave differently than `var`. They are hoisted into a special zone called the Temporal Dead Zone (TDZ).
 
 TDZ is a time between the memory creation phase and the code execution phase. It is a special zone where the variable is not accessible. Accessing a variable in the TDZ throws a ReferenceError.
 
@@ -74,8 +74,8 @@ function getName() {
 }
 ```
 
-### The Var vs Let
-1. var - the old way
+### The `var` vs `let`
+1. `var` - the old way
 ```js 
 console.log(a); // Output: undefined (No error, just weird data)
 var a = 10;
@@ -87,9 +87,9 @@ var a = 10;
 console.log(b); // Output: ReferenceError: Cannot access 'b' before initialization
 let b = 20;
 ```
-- here memory is allocated to `b` but it is stored in a separate memory space (often called Script Scope), NOT the global object. It is uninitialized. The engine forbids you from touching it. The code crashes to protect us from using a variable that isn't ready.
+- here memory is allocated to `b` but it is stored in a separate memory space (often called Script Scope), **NOT** the global object. It is uninitialized. The engine forbids you from touching it. The code crashes to protect us from using a variable that isn't ready.
 
-### const : The Strictest Sibling
+### `const` : The Strictest Sibling
 `const` behaves exactly like `let` regarding the Temporal Dead Zone, but it adds two tighter constraints:
 
 1. You must initialize the variable when you declare it.
@@ -105,17 +105,18 @@ const b = 100;
 b = 200;        // 🔴 TypeError: Assignment to constant variable.
 ```
 
-**Pro Tip: Check your Browser Scope**
-If you open Chrome DevTools, go to "Sources," and put a debugger on the first line:
-You will see var variables under the Global scope.
-You will see let and const variables under a separate Script (or Block) scope.
+***Pro Tip*: Check your Browser Scope**
+
+If you open Chrome DevTools, go to "Sources" and put a debugger on the first line:
+You will see `var` variables under the Global scope.
+You will see `let` and `const` variables under a separate Script (or Block) scope.
 
 Here is exactly what is happening inside the engine to cause that split between Global and Script.
 
-1. The Global Scope (var and function)
+1. The Global Scope (`var` and `function`)
 Variables declared with `var` and Function Declarations are attached directly to the Global Object (window) - this pollutes the global namespace.
 
-So JS devs created the Script Scope to prevent this. A Separate storage space for let and const. Still accessible everywhere in file but it is not attached to global object.
+So JS devs created the Script Scope to prevent this. A Separate storage space for `let` and `const`. Still accessible everywhere in file but it is not attached to global object.
 
-2. The Script Scope (let, const, and function)
+2. The Script Scope (`let`, `const`, and `function`)
 Variables declared with `let` and `const` are from the new days of JavaScript.
