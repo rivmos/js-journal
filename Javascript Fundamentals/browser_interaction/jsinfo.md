@@ -31,4 +31,4 @@ let isBoss = confirm("Are you the boss?");
 alert( isBoss ); // true if OK is pressed
 ``` 
 
- [Prev](../data_types/jsinfo.md) [Next](../type_conversions/jsinfo.md/)
+ [Prev](../data_types/jsinfo.md) [Next](../type_conversions/jsinfo.md)

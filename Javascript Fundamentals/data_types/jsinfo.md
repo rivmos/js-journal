@@ -167,4 +167,4 @@ Some people prefer typeof(x), although the typeof x syntax is much more common.
 
 
 
- [Prev](../variables/jsinfo.md) [Next](../browser_interaction/jsinfo.md/)
+ [Prev](../variables/jsinfo.md) [Next](../browser_interaction/jsinfo.md)
