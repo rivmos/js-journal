@@ -9,11 +9,11 @@
 When you use a developer console to run code, please note that it doesn’t use strict by default.
 
 ```js
-'use strict'; <Shift+Enter for a newline>
+'use strict'; `<Shift+Enter for a newline>`
 // ...your code
 ```
 
-<Enter to run>
+`<Enter to run>`
 
 It works in most browsers, namely Firefox and Chrome.
 
