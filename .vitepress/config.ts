@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "JS Journal",
   description: "A personal learning journal for JavaScript",
+  base: '/js-journal/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
