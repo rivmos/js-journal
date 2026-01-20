@@ -31,8 +31,8 @@ function outer() {
     return inner; // Function is returned
 }
 
-var callHero = outer(); // outer() runs and is destroyed here
-callHero(); // What does this print?
+var z = outer(); // outer() runs and is destroyed here
+z(); // What does this print?
 ```
 
 Answer: Superman
@@ -77,3 +77,6 @@ Benefits of Closure:
 5. Multiple instances – each counter has its own memory.
 6. Cleaner APIs – expose only what is needed.
 7. Used everywhere – React hooks, event handlers, libraries.
+
+
+### Stale Closures - When You Don't Respect The Closure

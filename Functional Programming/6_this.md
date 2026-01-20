@@ -34,7 +34,7 @@ function greet() {
 const person = { name: 'John' };
 greet.call(person); // Hello, John
 greet.apply(person); // Hello, John
-const greetPerson = greet.bind(person);
+const greetPerson = greet.bind(person);rows a "Stack Over
 greetPerson(); // Hello, John
 ```
 
@@ -72,6 +72,14 @@ class EditorService {
 }
 ```
 
+It works with arrow functions because of the Scope Chain.
+
+Remember the Execution Context Object? It has a pointer to its Outer Environment.
+
+Regular Functions: Create their own `this` in their Memory Component.
+Arrow Functions: Do NOT create a `this`. When you use `this` inside an arrow function, JS says: "I don't have a `this`, let me look at my pointer to the parent's environment."
+
+
 **Interview Favourite Question:**
 What is logged? (Hint: Look at how the function inside `setTimeout` is being called).
 
@@ -86,6 +94,8 @@ const obj = {
 };
 
 obj.printId();
+
+
 
 ```
 
