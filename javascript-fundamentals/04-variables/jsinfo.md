@@ -138,5 +138,3 @@ alert(color); // #FF7F00
 
 > **Name Things Right!!**
 > Spend time thinking about the right name for a variable before declaring it. Doing so will repay you handsomely.
-
- [Prev](../03-use-strict/jsinfo.md) [Next](../05-data-types/jsinfo.md)

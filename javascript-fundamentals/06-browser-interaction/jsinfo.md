@@ -32,5 +32,3 @@ The result is **true** if OK is pressed and **false** otherwise.
 let isBoss = confirm("Are you the boss?");
 alert( isBoss ); // true if OK is pressed
 ``` 
-
- [Prev](../05-data-types/jsinfo.md) [Next](../07-type-conversions/jsinfo.md)

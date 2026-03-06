@@ -31,6 +31,3 @@ If it doesn’t, e.g. in an old browser, there’s an ugly, but reliable way to 
 Modern JavaScript supports “classes” and “modules” – advanced language structures, that enable use strict automatically. So we don’t need to add the "use strict" directive, if we use them.
 
 So, for now "use strict"; is a welcome guest at the top of your scripts. Later, when your code is all in classes and modules, you may omit it.
-
-
- [Prev](../02-code-structure/jsinfo.md)  [Next](../04-variables/jsinfo.md)

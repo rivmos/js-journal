@@ -165,6 +165,3 @@ Some people prefer typeof(x), although the typeof x syntax is much more common.
 ### The Historical Bug
 - The result of typeof null is "object". That’s an officially recognized error in typeof, coming from very early days of JavaScript and kept for compatibility. Definitely, null is not an object. It is a special value with a separate type of its own. The behavior of typeof is wrong here.
 
-
-
- [Prev](../04-variables/jsinfo.md) [Next](../06-browser-interaction/jsinfo.md)

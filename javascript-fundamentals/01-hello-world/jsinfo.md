@@ -49,7 +49,3 @@ If the `<script>` tag has a `src` attribute, it loads external JavaScript — an
 ```
 
 Always put **external scripts** either in the `<head>` (with `defer`) or before the closing `</body>` tag to avoid blocking rendering.
-
----
-
- [Prev](../index.md/) [Next](../02-code-structure/jsinfo.md)

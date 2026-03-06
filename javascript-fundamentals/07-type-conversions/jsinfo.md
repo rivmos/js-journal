@@ -67,5 +67,3 @@ alert( Boolean("0") ); // true
 alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
 
 ```
-
- [Prev](../06-browser-interaction/jsinfo.md) [Next](../08-mathematical-operations/jsinfo.md)

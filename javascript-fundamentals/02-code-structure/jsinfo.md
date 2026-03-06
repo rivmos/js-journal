@@ -5,7 +5,6 @@ In JavaScript, **statements** are commands that perform actions — each stateme
 
 While semicolons are *technically optional*, **industry best practice** (and used by the top 1% of devs) is to **always end each statement with a semicolon** `;`.
 
----
 
 ## Statements
 
@@ -26,8 +25,6 @@ alert('Hello');
 alert('World');
 ```
 
----
-
 ## Semicolon Omission (Automatic Semicolon Insertion)
 
 JavaScript automatically inserts semicolons **in most cases** where a line break appears.
@@ -38,18 +35,18 @@ alert('Hello')
 alert('World')
 ```
 
-🧠 However, **this is not always safe** — newlines are **not** always interpreted as semicolons.
+However, **this is not always safe** — newlines are **not** always interpreted as semicolons.
 
 ---
 
-### ⚠️ When Omission Causes Problems
+### When Omission Causes Problems
 
 For example, when an expression is **incomplete**, JavaScript will *not* insert a semicolon:
 
 ```js
 alert(3 +
 1
-+ 2); // ✅ Works fine (output: 6)
++ 2); // Works fine (output: 6)
 ```
 
 But this one breaks:
@@ -66,11 +63,9 @@ The engine interprets it as:
 alert("Hello")[1, 2].forEach(alert);
 ```
 
-💥 **Error:** `alert(...)` returns `undefined`, and `undefined[1, 2]` is invalid.
+**Error:** `alert(...)` returns `undefined`, and `undefined[1, 2]` is invalid.
 
 Hence, always **use semicolons explicitly** — it avoids subtle, production-breaking bugs.
-
----
 
 ## Comments
 
@@ -78,7 +73,7 @@ Comments are **non-executable** parts of code — used to describe logic or temp
 
 ---
 
-### 🗒️ Single-Line Comment
+### Single-Line Comment
 
 Use `//` for single-line comments:
 
@@ -91,7 +86,7 @@ alert('World'); // This comment follows a statement
 
 ---
 
-### 💜 Multi-Line Comment
+### Multi-Line Comment
 
 Use `/* ... */` for multi-line or block comments:
 
@@ -104,5 +99,3 @@ alert('World');
 
 > 🏁 **Golden Rule:**
 > Even though JavaScript tries to “help” you by inserting semicolons, professionals don’t rely on guesses — they write explicit, intentional code.
-
- [Prev](../01-hello-world/jsinfo.md) [Next](../03-use-strict/jsinfo.md)

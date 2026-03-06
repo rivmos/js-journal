@@ -244,6 +244,3 @@ let counter = 1;
 alert( 2 * counter );
 counter++;
 ```
-
-
- [Prev](../07-type-conversions/jsinfo.md) [Next](../09-comparisons/jsinfo.md)
