@@ -1,4 +1,4 @@
-## Comparisons
+# Comparisons
 
 #### What Does A Comparison Give
 All comparison operators return a boolean value:
