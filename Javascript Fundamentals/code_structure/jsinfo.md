@@ -1,4 +1,5 @@
-# ⚡ JavaScript Statements & Comments
+# Code Structure
+
 
 In JavaScript, **statements** are commands that perform actions — each statement tells the engine to *do something*.
 
@@ -6,7 +7,7 @@ While semicolons are *technically optional*, **industry best practice** (and use
 
 ---
 
-## 🧩 Statements
+## Statements
 
 ```js
 alert('Hello'); alert('World');
@@ -16,7 +17,7 @@ Here, both statements are on the same line — each separated by a semicolon.
 
 ---
 
-### ✅ Readable Form
+### Readable Form
 
 To make code **cleaner and readable**, each statement is written on its own line:
 
@@ -27,7 +28,7 @@ alert('World');
 
 ---
 
-## ⚙️ Semicolon Omission (Automatic Semicolon Insertion)
+## Semicolon Omission (Automatic Semicolon Insertion)
 
 JavaScript automatically inserts semicolons **in most cases** where a line break appears.
 This mechanism is known as **ASI (Automatic Semicolon Insertion)**.
@@ -71,7 +72,7 @@ Hence, always **use semicolons explicitly** — it avoids subtle, production-bre
 
 ---
 
-## 💬 Comments
+## Comments
 
 Comments are **non-executable** parts of code — used to describe logic or temporarily disable code.
 

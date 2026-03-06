@@ -1,3 +1,5 @@
+# Browser Interaction
+
 ### Alert
 It shows a message and waits for the user to press “OK”.
 

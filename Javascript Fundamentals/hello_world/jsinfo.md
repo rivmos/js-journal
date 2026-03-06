@@ -1,5 +1,4 @@
-
-## 🧱 JavaScript in HTML
+# Hello World
 
 JavaScript programs can be inserted **almost anywhere** inside an HTML document using the `<script>` tag.
 

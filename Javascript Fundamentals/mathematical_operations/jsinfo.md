@@ -1,4 +1,4 @@
-# Math Operations
+# Mathematical Operations
 
 ### Terms - Unary, Binary and Operand
 

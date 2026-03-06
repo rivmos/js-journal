@@ -14,24 +14,27 @@ export default defineConfig({
       {
         text: 'Javascript Fundamentals',
         items: [
-          { text: 'Introduction', link: '/Javascript Fundamentals/index' },
           { text: 'Hello World', link: '/Javascript Fundamentals/hello_world/jsinfo' },
           { text: 'Code Structure', link: '/Javascript Fundamentals/code_structure/jsinfo' },
           { text: 'Variables', link: '/Javascript Fundamentals/variables/jsinfo' },
           { text: 'Data Types', link: '/Javascript Fundamentals/data_types/jsinfo' },
+          { text: 'Browser Interaction', link: '/Javascript Fundamentals/browser_interaction/jsinfo' },
+          { text: 'Type Conversions', link: '/Javascript Fundamentals/type_conversions/jsinfo' },
+          { text: 'Mathematical Operations', link: '/Javascript Fundamentals/mathematical_operations/jsinfo' },
         ]
       },
       {
         text: 'Functional Programming',
         items: [
-          { text: 'Introduction', link: '/Functional Programming/index' },
+          { text: 'Contents', link: '/Functional Programming/index' },
           { text: 'Execution Context', link: '/Functional Programming/1_execution-context' },
           { text: 'Hoisting', link: '/Functional Programming/2_hoisting' },
           { text: 'Scope', link: '/Functional Programming/3_scope' },
           { text: 'Closure', link: '/Functional Programming/4_closure' },
           { text: 'Call Stack', link: '/Functional Programming/5_callstack' },
           { text: 'This', link: '/Functional Programming/6_this' },
-        ]
+        ],
+        collapsed: true,
       }
     ],
     socialLinks: [
