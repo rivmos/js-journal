@@ -4,6 +4,9 @@ export default defineConfig({
   title: "JS Journal",
   description: "A personal learning journal for JavaScript",
   base: '/js-journal/',
+  head: [
+    ['link', { rel: 'icon', href: '/js-journal/favicon.svg', type: 'image/svg+xml' }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
