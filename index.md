@@ -2,13 +2,13 @@
 layout: home
 
 hero:
-  name: "JS Journal"
-  text: "My Learning Journey"
-  tagline: "Notes on JavaScript, Functional Programming, and more."
+  name: "Welcome To"
+  text: "The JS Journal"
+  tagline: ""
   actions:
     - theme: brand
-      text: Get Started
-      link: /Javascript Fundamentals/index
+      text: Start Now
+      link: /javascript-fundamentals/index
     - theme: alt
       text: View on GitHub
       link: https://github.com/rivmos/js-journal
@@ -16,7 +16,7 @@ hero:
 features:
   - title: JavaScript Fundamentals
     details: Core concepts including variables, data types, and browser interaction.
-    link: /Javascript Fundamentals/index
+    link: /javascript-fundamentals/index
   - title: Functional Programming
     details: Deep dive into execution context, hoisting, scope, closures, and more.
     link: /Functional Programming/index

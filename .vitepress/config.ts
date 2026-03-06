@@ -7,32 +7,32 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Fundamentals', link: '/Javascript Fundamentals/index' },
-      { text: 'Functional', link: '/Functional Programming/index' }
+      { text: 'JavaScript Fundamentals', link: '/javascript-fundamentals/index' },
+      { text: 'Functional Programming', link: '/functional-programming/index' }
     ],
     sidebar: [
       {
-        text: 'Javascript Fundamentals',
+        text: 'JavaScript Fundamentals',
         items: [
-          { text: 'Hello World', link: '/Javascript Fundamentals/hello_world/jsinfo' },
-          { text: 'Code Structure', link: '/Javascript Fundamentals/code_structure/jsinfo' },
-          { text: 'Variables', link: '/Javascript Fundamentals/variables/jsinfo' },
-          { text: 'Data Types', link: '/Javascript Fundamentals/data_types/jsinfo' },
-          { text: 'Browser Interaction', link: '/Javascript Fundamentals/browser_interaction/jsinfo' },
-          { text: 'Type Conversions', link: '/Javascript Fundamentals/type_conversions/jsinfo' },
-          { text: 'Mathematical Operations', link: '/Javascript Fundamentals/mathematical_operations/jsinfo' },
+          { text: 'Hello World', link: '/javascript-fundamentals/hello_world/jsinfo' },
+          { text: 'Code Structure', link: '/javascript-fundamentals/code_structure/jsinfo' },
+          { text: 'Variables', link: '/javascript-fundamentals/variables/jsinfo' },
+          { text: 'Data Types', link: '/javascript-fundamentals/data_types/jsinfo' },
+          { text: 'Browser Interaction', link: '/javascript-fundamentals/browser_interaction/jsinfo' },
+          { text: 'Type Conversions', link: '/javascript-fundamentals/type_conversions/jsinfo' },
+          { text: 'Mathematical Operations', link: '/javascript-fundamentals/mathematical_operations/jsinfo' },
         ],
         collapsed: true,
       },
       {
         text: 'Functional Programming',
         items: [
-          { text: 'Execution Context', link: '/Functional Programming/1_execution-context' },
-          { text: 'Hoisting', link: '/Functional Programming/2_hoisting' },
-          { text: 'Scope', link: '/Functional Programming/3_scope' },
-          { text: 'Closure', link: '/Functional Programming/4_closure' },
-          { text: 'Call Stack', link: '/Functional Programming/5_callstack' },
-          { text: '\'this\' Makes Sense', link: '/Functional Programming/6_this' },
+          { text: 'Execution Context', link: '/functional-programming/1_execution-context' },
+          { text: 'Hoisting', link: '/functional-programming/2_hoisting' },
+          { text: 'Scope', link: '/functional-programming/3_scope' },
+          { text: 'Closure', link: '/functional-programming/4_closure' },
+          { text: 'Call Stack', link: '/functional-programming/5_callstack' },
+          { text: '\'this\' Makes Sense', link: '/functional-programming/6_this' },
         ],
         collapsed: true,
       }

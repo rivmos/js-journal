@@ -1,4 +1,4 @@
-## Contents
+# Contents
 - [Execution Context](./1_execution-context.md)
 - [Hoisting](./2_hoisting.md)
 - [Scope](./3_scope.md)
