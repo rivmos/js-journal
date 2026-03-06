@@ -16,6 +16,7 @@ export default defineConfig({
         items: [
           { text: 'Hello World', link: '/javascript-fundamentals/01-hello-world/jsinfo' },
           { text: 'Code Structure', link: '/javascript-fundamentals/02-code-structure/jsinfo' },
+          { text: 'Use Strict - The Modern Way', link: '/javascript-fundamentals/03-use-strict/jsinfo' },
           { text: 'Variables', link: '/javascript-fundamentals/04-variables/jsinfo' },
           { text: 'Data Types', link: '/javascript-fundamentals/05-data-types/jsinfo' },
           { text: 'Browser Interaction', link: '/javascript-fundamentals/06-browser-interaction/jsinfo' },

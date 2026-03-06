@@ -2,9 +2,9 @@
 
 JavaScript programs can be inserted **almost anywhere** inside an HTML document using the `<script>` tag.
 
-```js
+```html
 // Example:
-/*
+
 <!DOCTYPE HTML>
 <html>
 
@@ -20,7 +20,7 @@ JavaScript programs can be inserted **almost anywhere** inside an HTML document 
 
 </body>
 </html>
-*/
+
 ```
 
 🧠 The script runs **as the browser reads the HTML**, so the alert will show *before* the last paragraph is rendered.
