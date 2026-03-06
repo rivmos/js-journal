@@ -105,4 +105,4 @@ alert('World');
 > 🏁 **Golden Rule:**
 > Even though JavaScript tries to “help” you by inserting semicolons, professionals don’t rely on guesses — they write explicit, intentional code.
 
- [Prev](../01-hello-world/jsinfo.md) [Next](../04-use-strict/jsinfo.md)
+ [Prev](../01-hello-world/jsinfo.md) [Next](../03-use-strict/jsinfo.md)
