@@ -1,4 +1,4 @@
-## Execution Context Object
+# Execution Context Object
 Everything in JavaScript happens inside this execution context. It is the environment where the JavaScript code is scanned, parsed, and executed.
 
 When we run a JavaScript program, the very first thing the engine creates is the **Global Execution Context**.

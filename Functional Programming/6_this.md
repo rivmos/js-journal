@@ -1,4 +1,4 @@
-## this Keyword
+# `this` finally makes sense
 
 In JavaScript, `this` is **not** assigned when the function is written; it is assigned when the function is **CALLED**. (Except for arrow functions—we'll get to those).
 

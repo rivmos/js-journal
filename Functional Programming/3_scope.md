@@ -1,5 +1,4 @@
-
-### Scope
+# Scope
 
 A scope is a lexical environment where variables are accessible.
 

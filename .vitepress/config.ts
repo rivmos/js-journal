@@ -21,18 +21,18 @@ export default defineConfig({
           { text: 'Browser Interaction', link: '/Javascript Fundamentals/browser_interaction/jsinfo' },
           { text: 'Type Conversions', link: '/Javascript Fundamentals/type_conversions/jsinfo' },
           { text: 'Mathematical Operations', link: '/Javascript Fundamentals/mathematical_operations/jsinfo' },
-        ]
+        ],
+        collapsed: true,
       },
       {
         text: 'Functional Programming',
         items: [
-          { text: 'Contents', link: '/Functional Programming/index' },
           { text: 'Execution Context', link: '/Functional Programming/1_execution-context' },
           { text: 'Hoisting', link: '/Functional Programming/2_hoisting' },
           { text: 'Scope', link: '/Functional Programming/3_scope' },
           { text: 'Closure', link: '/Functional Programming/4_closure' },
           { text: 'Call Stack', link: '/Functional Programming/5_callstack' },
-          { text: 'This', link: '/Functional Programming/6_this' },
+          { text: '\'this\' Makes Sense', link: '/Functional Programming/6_this' },
         ],
         collapsed: true,
       }

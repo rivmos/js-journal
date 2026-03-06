@@ -1,5 +1,4 @@
-
-## Hoisting
+# Hoisting
 Hoisting is the direct consequence of the memory creation phase. 
 `Many tutorials simplify Hoisting by saying "JavaScript moves your code to the top of the file." That is technically incorrect. The code doesn't move anywhere.`
 

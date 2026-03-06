@@ -1,4 +1,4 @@
-### Closure
+# Closure
 
 A Closure is not a separate concept; it is just the Lexical Environment rule applied to functions that are returned.
 

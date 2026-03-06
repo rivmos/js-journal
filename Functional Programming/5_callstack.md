@@ -1,4 +1,4 @@
-## Call Stack
+# Call Stack
 
 Every time you call a function, JS pushes a Stack Frame onto the Call Stack. This frame isn't just a placeholder; it's a chunk of memory that contains:
 - The function's Arguments.
