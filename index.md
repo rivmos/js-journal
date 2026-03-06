@@ -19,5 +19,5 @@ features:
     link: /javascript-fundamentals/index
   - title: Functional Programming
     details: Deep dive into execution context, hoisting, scope, closures, and more.
-    link: /Functional Programming/index
+    link: /functional-programming/index
 ---
