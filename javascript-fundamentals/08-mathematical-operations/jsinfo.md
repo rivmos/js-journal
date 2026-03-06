@@ -246,4 +246,4 @@ counter++;
 ```
 
 
- [Prev](../type_conversions/jsinfo.md) [Next](../comparisons/jsinfo.md)
+ [Prev](../07-type-conversions/jsinfo.md) [Next](../09-comparisons/jsinfo.md)

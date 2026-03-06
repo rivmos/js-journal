@@ -53,4 +53,4 @@ If the `<script>` tag has a `src` attribute, it loads external JavaScript — an
 
 ---
 
- [Prev](../index.md/) [Next](../code_structure/jsinfo.md)
+ [Prev](../index.md/) [Next](../02-code-structure/jsinfo.md)

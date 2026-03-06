@@ -33,4 +33,4 @@ Modern JavaScript supports “classes” and “modules” – advanced language
 So, for now "use strict"; is a welcome guest at the top of your scripts. Later, when your code is all in classes and modules, you may omit it.
 
 
- [Prev](../code_structure/jsinfo.md)  [Next](../variables/jsinfo.md)
+ [Prev](../02-code-structure/jsinfo.md)  [Next](../04-variables/jsinfo.md)

@@ -68,4 +68,4 @@ alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
 
 ```
 
- [Prev](../browser_interaction/jsinfo.md) [Next](../mathematical_operations/jsinfo.md)
+ [Prev](../06-browser-interaction/jsinfo.md) [Next](../08-mathematical-operations/jsinfo.md)
