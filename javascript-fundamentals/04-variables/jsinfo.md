@@ -1,15 +1,40 @@
 # Variables
 
-JavaScript application needs to work with information and **variables are used to store this information**. A variable is a “named storage” for data
+JavaScript applications work with information. Variables are used to store that information. A variable is a **binding between a name and a value stored in memory.**
 
-The statement below **creates (in other words: declares)** a variable with the name “message” and with some data put into it using assignment operator = :
+When your JavaScript code runs, the engine creates something called an Environment Record (will go deeper once we reach Closure and Scope).
+It's essentially just the engine's way of keeping track of which names exist and what values they hold at any given point in your code.
+
+| name | value |
+|------|-------|
+| age  | → `25` |
+| user | → `{ name: "Sam" }` |
+
+That's it. A variable is just a row in this table — a name on the left, a value on the right.
+
+
+- Primitive:
+`age  →  25`
+The actual value sits right there in the table.
+
+- Object:
+`user  →  ✉️ address  →  { name: "Sam" }`
+The object is too big to sit in the table, so it lives somewhere else in memory. The table just stores the address of where to find it.
+That address is called a reference.
+
+> Variables always store values.
+> For primitives, the value is the data.
+> For objects, the value is an address pointing to the data.
+
+
+
+## Declaration & Assignment
+
+The statement below **creates (in other words: declares;The engine registers the name, but there's no value yet. It holds `undefined`)** a variable with the name “message” and with some data put into it using assignment operator = :
 
 ```js
 let message;
-
 message = "Hello"; 
-
-// The string is now saved into the memory area associated with the variable
 ```
 
 We can combine the variable declaration and assignment into a single line
@@ -67,7 +92,7 @@ There are two limitations on variable names in JavaScript:
 
 - The name must contain only letters, digits, or the symbols $ and _.
 - The first character must not be a digit.
-- let, class, return, and function are reserved and can't be used as variable.
+- let, class, return, and function are reserved (and many more) and can't be used as variable.
 
 ```js 
 let userName;
@@ -77,7 +102,7 @@ let test123;
 ```
 
 ```js 
-// the dollar sign '$' and the underscore '_' can also be used in names
+// the dollar sign '$', unicode character and the underscore '_' can also be used in names
 let $ = 1; // declared a variable with the name "$"
 let _ = 2; // and now a variable with the name "_"
 
@@ -93,7 +118,7 @@ Normally, we need to define a variable before using it. But in the old times, it
 ```js
 // note: no "use strict" in this example
 
-num = 5; // the variable "num" is created if it didn't exist
+num = 5; // the variable "num" is created if it didn't exist, this is implicit global variable
 
 alert(num); // 5
 ```
