@@ -107,7 +107,7 @@ When we have more than one operator in an expression then the order of execution
 
 We can overide the default order by adding a part of expression in parantheses e.g, (1 + 2) * 2.
 
-Every operator in JS has a corresponding precedence number. The one with the larger number executes first. If the precedence is the same, the execution order is from left to right.
+Every operator in JS has a corresponding precedence number. `The one with the larger number executes first. If the precedence is the same, the execution order is from left to right.`
 
 [Presedence Order Table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence) - We don't need to rember this but note that unary operators are higher than corresponding binary ones, that is why in above example the unary + executed before the binary +
 
