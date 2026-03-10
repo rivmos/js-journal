@@ -61,6 +61,7 @@ alert( true == 1 ); // true
 alert( false == 0 ); // true
 ```
 
+### A Funny Consequence
 > It is possible that at the same time:
 Two values are equal.
 One of them is true as a boolean and the other one is false as a boolean.
@@ -74,4 +75,75 @@ alert( Boolean(b) ); // true
 alert(a == b); // true!
 ```
 
-From JavaScript’s standpoint, this result is quite normal. An equality check converts values using the numeric conversion (hence "0" becomes 0), while the explicit Boolean conversion uses another set of rules.
+From JavaScript’s standpoint, this result is quite normal. **An equality check converts values using the numeric conversion** (hence "0" becomes 0), while the explicit Boolean conversion uses another set of rules.
+
+## Strict Equality
+A regular equality check == has a problem. It cannot differentiate 0 from false
+
+```js
+alert( 0 == false ); // true
+alert( '' == false ); // true
+```
+
+This happens because operands of different types are converted to numbers by the equality operator ==. An empty string, just like false, becomes a zero. What to do if we’d like to differentiate 0 from false?
+
+A strict equality operator === checks the equality without type conversion.
+
+In other words, if a and b are of different types, then a === b immediately returns false without an attempt to convert them.
+
+```js
+alert( 0 === false ); // false, because the types are different
+```
+
+There is also a “strict non-equality” operator !== analogous to !=.
+
+## Comparison with `null` and  `undefined`
+
+- For a strict equality check`===`
+```js
+alert( null === undefined ); // false, because each of them is a different type.
+```
+
+- For a non-strict check `==`
+
+There’s a special rule. These two are a “sweet couple”: they equal each other (in the sense of ==), but not any other value.
+
+```js
+alert( null == undefined ); // true
+```
+
+- For maths and other comparisons `< > <= >=`
+`null/undefined` are converted to numbers: `null` becomes `0`, while `undefined` becomes `NaN`.
+
+- Strange result: `null` vs `0`
+
+```js 
+
+alert( null > 0 );  // (1) false
+alert( null == 0 ); // (2) false
+alert( null >= 0 ); // (3) true
+
+```
+
+Mathematically, that’s strange. The last result states that “`null` is greater than or equal to zero”, so in one of the comparisons above it must be `true`, but they are both `false`.
+
+The reason is that an equality check `==` and comparisons `> < >= <=` work differently. Comparisons convert `null` to a number, treating it as `0`. That’s why (3) `null >= 0` is `true` and (1) `null > 0` is false.
+
+On the other hand, the equality check `==` for `undefined` and `null` is defined such that, without any conversions, they equal each other and don’t equal anything else. That’s why (2) `null == 0` is `false`.
+
+
+- Incompatible undefined
+The value undefined shouldn’t be compared to other values:
+```js
+alert( undefined > 0 ); // false (1)
+alert( undefined < 0 ); // false (2)
+alert( undefined == 0 ); // false (3)
+```
+We get these results because:
+
+Comparisons `(1)` and `(2)` return false because undefined gets converted to `NaN` and **`NaN` is a special numeric value which returns false for all comparisons**.
+The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
+
+## How to avoid problems
+- Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
+- Don’t use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
