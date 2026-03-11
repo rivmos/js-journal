@@ -26,6 +26,8 @@ export default defineConfig({
           { text: 'Type Conversions', link: '/javascript-fundamentals/07-type-conversions/jsinfo' },
           { text: 'Mathematical Operations', link: '/javascript-fundamentals/08-mathematical-operations/jsinfo' },
           { text: 'Comparisons', link: '/javascript-fundamentals/09-comparisons/jsinfo' },
+          { text: 'Conditionals', link: '/javascript-fundamentals/10-conditionals/jsinfo' },
+          { text: 'Logical Operators', link: '/javascript-fundamentals/11-logical-operators/jsinfo' },
         ],
       },
       {
