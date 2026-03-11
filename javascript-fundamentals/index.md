@@ -12,3 +12,5 @@ This section covers the core building blocks of the language: how to write and r
 - [Type Conversions](./07-type-conversions/jsinfo.md)
 - [Mathematical Operations](./08-mathematical-operations/jsinfo.md)
 - [Comparisons](./09-comparisons/jsinfo.md)
+- [Conditionals](./10-conditionals/jsinfo.md)
+- [Logical Operators](./11-logical-operators/jsinfo.md)
